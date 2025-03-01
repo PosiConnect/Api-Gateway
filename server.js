@@ -9,7 +9,7 @@ dotenv.config();
 const PORT = process.env.PORT || 5001;
 
 app.use(
-  "api/user",
+  "/api/user",
   createProxyMiddleware({ target: "http://localhost:3000", changeorigin: true })
 );
 
