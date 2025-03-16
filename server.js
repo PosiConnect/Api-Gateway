@@ -9,6 +9,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5001;
 
+//This is the configuration for the proxy middleware
 app.use(
   "/user",
   createProxyMiddleware({
